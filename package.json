@@ -1,0 +1,25 @@
+{
+  "name": "registration-form",
+  "version": "1.0.0",
+  "description": "__Registration Form__\r # Project uses below technologies\r 1. HTML5\r 2. CSS3\r 3. TAILWIND CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mr-codux/registration-form.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mr-codux/registration-form/issues"
+  },
+  "homepage": "https://github.com/mr-codux/registration-form#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
