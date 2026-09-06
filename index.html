@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="w-full h-[100vh] m-[0] bg-[#1b1b32] text-[#f5f6f7]">
-  <div class="flex items-center justify-center flex-col">
+  <div class="flex items-center justify-center flex-col gap-0.5">
      <h1 class="my-4 mx-auto text-center text-2">Registration Form</h1>
-     <p clas="text-1">Please fill out this form with the required information</p>
+     <p clas="text-1 text-center">Please fill out this form with the required information</p>
   </div>
 
-  <form method="post" action='https://register-demo.freecodecamp.org'>
-    <fieldset>
+  <form class="w-full md:w-[60vw] min-w-[300px] mx-auto max-w-sm md:max-w-lg pb-4 md:pb-8">
+    <fieldset class="border-none py-4 md:py-8 border-b-3 border-[#3b3b4f] last-of-type:border-b-0">
       <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text"
           required /></label>
       <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text"
