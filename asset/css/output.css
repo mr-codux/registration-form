@@ -8,6 +8,10 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --container-sm: 24rem;
+    --container-lg: 32rem;
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-bold: 700;
@@ -164,48 +168,128 @@
   }
 }
 @layer utilities {
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .my-1 {
+    margin-block: var(--spacing);
+  }
+  .my-4 {
+    margin-block: calc(var(--spacing) * 4);
+  }
+  .mt-1 {
+    margin-top: var(--spacing);
+  }
+  .block {
+    display: block;
+  }
+  .flex {
+    display: flex;
+  }
   .inline {
     display: inline;
   }
-  .table {
-    display: table;
+  .min-h-\[2rem\] {
+    min-height: 2rem;
   }
-  .border-collapse {
-    border-collapse: collapse;
+  .min-h-screen {
+    min-height: 100vh;
   }
-  .resize {
-    resize: both;
+  .w-full {
+    width: 100%;
   }
-  .border {
+  .max-w-sm {
+    max-width: var(--container-sm);
+  }
+  .min-w-\[300px\] {
+    min-width: 300px;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-0\.5 {
+    gap: calc(var(--spacing) * 0.5);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .border-\[1px\] {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  .border-b-3 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 3px;
   }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
+  .border-none {
+    --tw-border-style: none;
+    border-style: none;
   }
-  .underline {
-    text-decoration-line: underline;
+  .border-\[\#3b3b4f\] {
+    border-color: #3b3b4f;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
+  .border-\[\#ffffff\] {
+    border-color: #ffffff;
+  }
+  .bg-\[\#0a0a23\] {
+    background-color: #0a0a23;
+  }
+  .bg-\[\#1b1b32\] {
+    background-color: #1b1b32;
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-\[16px\] {
+    font-size: 16px;
+  }
+  .text-\[\#f5f6f7\] {
+    color: #f5f6f7;
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .last-of-type\:border-b-0:last-of-type {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 0px;
+  }
+  @media (width >= 48rem) {
+    .md\:my-2 {
+      margin-block: calc(var(--spacing) * 2);
+    }
+    .md\:mt-2\.5 {
+      margin-top: calc(var(--spacing) * 2.5);
+    }
+    .md\:w-\[60vw\] {
+      width: 60vw;
+    }
+    .md\:max-w-lg {
+      max-width: var(--container-lg);
+    }
+    .md\:gap-8 {
+      gap: calc(var(--spacing) * 8);
+    }
+    .md\:py-8 {
+      padding-block: calc(var(--spacing) * 8);
+    }
+    .md\:pb-8 {
+      padding-bottom: calc(var(--spacing) * 8);
+    }
   }
 }
 @property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-outline-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
@@ -214,8 +298,6 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
-      --tw-font-weight: initial;
-      --tw-outline-style: solid;
     }
   }
 }
