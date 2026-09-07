@@ -3,68 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="icon" type="image/svg+xml" href="asset/images/favicon.svg" /> -->
+  <title>Create your account | Northstar</title>
+  <link rel="icon" type="image/svg+xml" href="asset/images/favicon.svg" />
   <link href="./asset/css/output.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="flex flex-col items-center justify-center min-h-screen bg-[#F54927]">
-  <div class="flex items-center justify-center flex-col">
-    <h1 class="text-center text-[2rem] text-white">Registration Form</h1>
-    <p class="text-[1rem] text-center text-white">Please fill out this form with the required information</p>
-  </div>
+  <main class="page-shell">
+    <section class="intro-panel">
+      <div class="brand-mark" aria-hidden="true">N</div>
+      <p class="eyebrow">NORTHSTAR / MEMBERSHIP</p>
+      <h1>Make room for what comes next.</h1>
+      <p class="intro-copy">Create your Northstar account and keep your work, ideas, and people moving in the same direction.</p>
+      <div class="progress-note"><span class="progress-dot"></span> Takes about 2 minutes</div>
+    </section>
 
-  <form class="flex flex-col items-center justify-center">
-    <!-- fieldset one -->
-    <fieldset class="border-none border-[#3b3b4f] last-of-type:border-b-0">
-        <label  class="" for="first-name">Enter Your First Name: <input class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white w-[100px] h-[50px]" id="first-name" name="first-name" type="text"
-            required />
-        </label>
-        <label  class="" for="last-name">Enter Your Last Name: <input class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white w-[100px] h-[50px]" id="last-name" name="last-name" type="text"
-            required />
-        </label>
-        <label  class="" for="email">Enter Your Email: <input class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white w-[100px] h-[50px]" id="email" name="email" type="email" required />
-        </label>
-        <label  class="" for="new-password">Create a New Password: <input class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white w-[100px] h-[50px]" id="new-password" name="new-password" type="password"
-            pattern="[a-z0-9]{8,}" required />
-        </label>
-    </fieldset>
-    <!-- fieldset two -->
-    <fieldset class="border-none border-[#3b3b4f] last-of-type:border-b-0">
-      <label  class="" for="personal-account"><input  class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="personal-account" type="radio" name="account-type" class="inline" />
-        Personal Account
-      </label>
-      <label  class="" for="business-account"><input  class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="business-account" type="radio" name="account-type" class="inline" />
-        Business Account
-      </label>
-      <label  class="" for="terms-and-conditions">
-        <input  class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept
-        the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
-      </label>
-    </fieldset>
-    <!-- fieldset three -->
-    <fieldset class="border-none border-[#3b3b4f] last-of-type:border-b-0">
-      <label  class="" for="profile-picture">Upload a profile picture: <input class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="profile-picture" type="file"
-          name="file" />
-      </label>
-      <label class="" for="age">Input your age (years): <input  class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="age" type="number" name="age" min="13" max="120" />
-      </label>
-      <label class="" for="referrer">How did you hear about us?
-        <select class=" w-full min-h-[2rem]" id="referrer" name="referrer">
-          <option value="">(select one)</option>
-          <option value="1">freeCodeCamp News</option>
-          <option value="2">freeCodeCamp YouTube Channel</option>
-          <option value="3">freeCodeCamp Forum</option>
-          <option value="4">Other</option>
-        </select>
-      </label>
-      <label class="" for="bio">Provide a bio:
-        <textarea class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
-      </label>
-    </fieldset>
-    <!-- submit button -->
-    <input class="w-full min-h-[2rem] bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" type="submit" value="Submit" />
-  </form>
+    <section class="form-panel" aria-labelledby="form-title">
+      <div class="form-heading">
+        <p class="eyebrow">WELCOME ABOARD</p>
+        <h2 id="form-title">Create your account</h2>
+        <p>Already a member? <a href="#sign-in">Sign in</a></p>
+      </div>
+
+      <form class="registration-form">
+        <fieldset>
+          <legend>Personal details</legend>
+          <div class="field-grid">
+            <label for="first-name">First name <input id="first-name" name="first-name" type="text" autocomplete="given-name" required></label>
+            <label for="last-name">Last name <input id="last-name" name="last-name" type="text" autocomplete="family-name" required></label>
+            <label class="full-width" for="email">Email address <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+            <label class="full-width" for="new-password">Create a password <span class="label-hint">8+ lowercase letters or numbers</span><input id="new-password" name="new-password" type="password" pattern="[a-z0-9]{8,}" autocomplete="new-password" required></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account type</legend>
+          <div class="account-options">
+            <label class="option-card" for="personal-account"><input id="personal-account" type="radio" name="account-type" value="personal" checked> <span><strong>Personal</strong><small>For individual projects</small></span></label>
+            <label class="option-card" for="business-account"><input id="business-account" type="radio" name="account-type" value="business"> <span><strong>Business</strong><small>For teams and companies</small></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>About you <span class="optional">Optional</span></legend>
+          <div class="field-grid">
+            <label for="profile-picture">Profile picture <input id="profile-picture" type="file" name="file" accept="image/*"></label>
+            <label for="age">Age <input id="age" type="number" name="age" min="13" max="120" placeholder="25"></label>
+            <label class="full-width" for="referrer">How did you hear about us?
+              <select id="referrer" name="referrer">
+                <option value="">Select one</option><option value="1">freeCodeCamp News</option><option value="2">freeCodeCamp YouTube Channel</option><option value="3">freeCodeCamp Forum</option><option value="4">Other</option>
+              </select>
+            </label>
+            <label class="full-width" for="bio">A short bio <textarea id="bio" name="bio" rows="3" placeholder="Tell us a little about yourself..."></textarea></label>
+          </div>
+        </fieldset>
+
+        <label class="terms" for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions"> <span>I agree to the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>.</span></label>
+        <button type="submit">Create my account <span aria-hidden="true">&#8594;</span></button>
+        <p class="secure-note">Your information is encrypted and never shared.</p>
+      </form>
+    </section>
+  </main>
   </div>
 </body>
 </html>
