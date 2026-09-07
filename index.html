@@ -14,43 +14,43 @@
     <p class="text-[10px] text-center text-white">Please fill out this form with the required information</p>
   </div>
 
-  <form class="flex flex-col items-center justify-center w-full md:w-[60vw] min-w-[300px] mx-auto max-w-sm md:max-w-lg pb-4 md:pb-8">
+  <form class="flex flex-col items-center justify-center w-full md:w-[60vw] min-w-[300px]">
     <!-- fieldset one -->
     <fieldset class="flex flex-col items-center justify-center border-none py-4 md:py-8 border-b-3 border-[#3b3b4f] last-of-type:border-b-0">
-        <label  class="my-1 md:my-2" for="first-name">Enter Your First Name: <input class="mt-1 md:mt-2.5 w-full min-h-[2rem] bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="first-name" name="first-name" type="text"
+        <label  class="" for="first-name">Enter Your First Name: <input class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="first-name" name="first-name" type="text"
             required />
         </label>
-        <label  class="my-1 md:my-2" for="last-name">Enter Your Last Name: <input class="mt-1 md:mt-2.5 w-full min-h-[2rem] bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="last-name" name="last-name" type="text"
+        <label  class="" for="last-name">Enter Your Last Name: <input class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="last-name" name="last-name" type="text"
             required />
         </label>
-        <label  class="my-1 md:my-2" for="email">Enter Your Email: <input class="mt-1 md:mt-2.5 w-full min-h-[2rem] bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="email" name="email" type="email" required />
+        <label  class="" for="email">Enter Your Email: <input class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="email" name="email" type="email" required />
         </label>
-        <label  class="my-1 md:my-2" for="new-password">Create a New Password: <input class="mt-1 md:mt-2.5 w-full min-h-[2rem] bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="new-password" name="new-password" type="password"
+        <label  class="" for="new-password">Create a New Password: <input class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="new-password" name="new-password" type="password"
             pattern="[a-z0-9]{8,}" required />
         </label>
     </fieldset>
     <!-- fieldset two -->
-    <fieldset class="flex flex-col items-center justify-center border-none py-4 md:py-8 border-b-3 border-[#3b3b4f] last-of-type:border-b-0">
-      <label  class="block my-1 md:my-2" for="personal-account"><input  class="mt-1 md:mt-2.5 w-full min-h-[2rem] bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="personal-account" type="radio" name="account-type" class="inline" />
+    <fieldset class="flex flex-col items-center justify-center last-of-type:border-b-0">
+      <label  class="" for="personal-account"><input  class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="personal-account" type="radio" name="account-type" class="inline" />
         Personal Account
       </label>
-      <label  class="block my-1 md:my-2" for="business-account"><input  class="mt-1 md:mt-2.5 w-full min-h-[2rem] bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="business-account" type="radio" name="account-type" class="inline" />
+      <label  class="" for="business-account"><input  class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="business-account" type="radio" name="account-type" class="inline" />
         Business Account
       </label>
-      <label  class="block my-1 md:my-2" for="terms-and-conditions">
-        <input  class="mt-1 md:mt-2.5 w-full min-h-[2rem] bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept
+      <label  class="" for="terms-and-conditions">
+        <input  class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept
         the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
       </label>
     </fieldset>
     <!-- fieldset three -->
-    <fieldset class="flex flex-col items-center justify-center border-none py-4 md:py-8 border-b-3 border-[#3b3b4f] last-of-type:border-b-0">
-      <label  class="block my-1 md:my-2" for="profile-picture">Upload a profile picture: <input class="mt-1 md:mt-2.5 w-full min-h-[2rem] bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="profile-picture" type="file"
+    <fieldset class="flex flex-col items-center justify-center border-b-3 border-[#3b3b4f] last-of-type:border-b-0">
+      <label  class="" for="profile-picture">Upload a profile picture: <input class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="profile-picture" type="file"
           name="file" />
       </label>
-      <label class="block my-1 md:my-2" for="age">Input your age (years): <input  class="mt-1 md:mt-2.5 w-full min-h-[2rem] bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="age" type="number" name="age" min="13" max="120" />
+      <label class="" for="age">Input your age (years): <input  class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="age" type="number" name="age" min="13" max="120" />
       </label>
-      <label class="block my-1 md:my-2" for="referrer">How did you hear about us?
-        <select class="mt-1 md:mt-2.5 w-full min-h-[2rem]" id="referrer" name="referrer">
+      <label class="" for="referrer">How did you hear about us?
+        <select class=" w-full min-h-[2rem]" id="referrer" name="referrer">
           <option value="">(select one)</option>
           <option value="1">freeCodeCamp News</option>
           <option value="2">freeCodeCamp YouTube Channel</option>
@@ -58,12 +58,12 @@
           <option value="4">Other</option>
         </select>
       </label>
-      <label class="block my-1 md:my-2" for="bio">Provide a bio:
-        <textarea class="mt-1 md:mt-2.5 w-full min-h-[2rem] bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+      <label class="" for="bio">Provide a bio:
+        <textarea class="bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
       </label>
     </fieldset>
     <!-- submit button -->
-    <input class="mt-1 md:mt-2.5 w-full min-h-[2rem]" type="submit" value="Submit" />
+    <input class="w-full min-h-[2rem] bg-[#0a0a23] border-[1px] border-[#ffffff] text-white" type="submit" value="Submit" />
   </form>
   </div>
 </body>
